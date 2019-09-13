@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <system>
+            <groups>
+                <aghayevi_smtpauthmailer>
+                    <label>Aghayevi Smtp Auth Mailer Settings</label>
+                    <tab>aghayevi</tab>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>15</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Active</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </active>
+                        <smtp_host translate="label">
+                            <label>Smtp host</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </smtp_host>
+                        <smtp_port translate="label">
+                            <label>Smtp port (25)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>TLS 587 - SSL 465 - default 25</comment>
+                        </smtp_port>
+                        <smtp_ssl translate="label">
+                            <label>Smtp SSL</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Either none, ssl or tls</comment>
+                        </smtp_ssl>
+                        <smtp_auth translate="label">
+                            <label>Smtp Auth</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Auth type none, login, plain, CRAM-MD5</comment>
+                        </smtp_auth>
+                        <smtp_username translate="label">
+                            <label>Smtp username</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Transactional email user</comment>
+                        </smtp_username>
+                        <smtp_password translate="label">
+                            <label>Smtp password</label>
+                            <frontend_type>obscure</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </smtp_password>
+                    </fields>
+                </aghayevi_smtpauthmailer>
+            </groups>
+        </system>
+    </sections>
+</config>

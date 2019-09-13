@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aghayevi_Smtpauthmailer>
+            <version>1.1.0</version>
+        </Aghayevi_Smtpauthmailer>
+    </modules>
+    <global>
+        <models>
+            <core>
+                <rewrite>
+                    <email_template>Aghayevi_Smtpauthmailer_Model_Core_Email_Template</email_template>
+                </rewrite>
+            </core>
+        </models>
+    </global>
+</config>
